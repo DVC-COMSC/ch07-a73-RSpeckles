@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "25",
+      "output": "[\\w,\\W]*5[\\w,\\W]*20[\\w,\\W]*25[\\w,\\W]*30[\\w,\\W]*35[\\w,\\W]*50[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "0",
+      "output": "[\\w,\\W]*0[\\w,\\W]*5[\\w,\\W]*20[\\w,\\W]*30[\\w,\\W]*35[\\w,\\W]*50[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T3",
+      "setup": "",
+      "run": "python main.py",
+      "input": "60",
+      "output": "[\\w,\\W]*5[\\w,\\W]*20[\\w,\\W]*30[\\w,\\W]*35[\\w,\\W]*50[\\w,\\W]*60[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
